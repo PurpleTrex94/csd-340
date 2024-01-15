@@ -1,0 +1,52 @@
+/* modernStyles.css */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4285f4;
+}
+
+h2 {
+    color: #ea4335;
+    margin-top: 20px;
+}
+
+.intro {
+    font-style: italic;
+    color: #673ab7;
+}
+
+.sentence {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+address {
+    font-style: normal;
+    margin-top: 20px;
+    color: #009688;
+}
+
+address a {
+    text-decoration: none;
+    color: #03a9f4;
+}
