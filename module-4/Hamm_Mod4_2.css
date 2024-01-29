@@ -1,0 +1,52 @@
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+#image-gallery {
+    margin-top: 10%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.image-item h3 {
+    text-align: center;
+}
+
+
+.image-item figure {
+    text-align: center;
+}
+
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+}
+
+
+h1 {
+    color: rgba(255, 0, 0, 0.8); /* Red */
+}
+
+.image-item h3 {
+    color: rgba(0, 128, 0, 0.8); /* Green */
+}
+
+figcaption {
+    color: rgba(0, 0, 255, 0.8); /* Blue */
+}
+
+
+.image-item {
+    display: block;
+    border: 1px solid black; 
+    padding: 10px;
+}
