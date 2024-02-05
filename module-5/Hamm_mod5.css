@@ -1,0 +1,89 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f5f9; /* Light blue-gray background */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #3498db; /* Blue header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555; /* Medium gray text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Blue hover color */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Section title styles */
+section h2 {
+    color: #3498db; /* Blue section title color */
+    margin-bottom: 15px;
+}
+
+/* Hobby styles */
+.hobby {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hobby h3 {
+    color: #3498db; /* Blue hobby title color */
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    color: #666; /* Medium gray hobby text color */
+}
+
+/* Footer styles */
+footer {
+    background-color: #555; /* Dark gray footer background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
