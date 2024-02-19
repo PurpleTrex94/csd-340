@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Rudyard Kipling" content="Joshua Hamm">
+    <meta name="description" content="Assignment 9.3: JavaScript - Part 1">
+    <meta name="keywords" content="HTML, CSS, development, CSD 340">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var diversityVariableValue = "unity";
+        var peaceVariableValue = "serenity";
+        var opportunitiesVariableValue = "challenges";
+        var obstaclesVariableValue = "obstacles";
+        var journeysVariableValue = "adventures";
+
+        function replaceSpan(spanId, variableValue) {
+            document.getElementById(spanId).innerHTML = variableValue;
+        }
+    </script>
+</head>
+<body>
+<h1>If-Rudyard Kipling</h1>
+
+<p>There's a moment in everyone's life when they realize the world is much bigger than they ever imagined. For me, it was the first time I stepped foot in a foreign country. The sights, the smells, the sounds - all unfamiliar yet strangely welcoming. It was in that moment that I understood the true beauty of <span id="diversity">_________</span>.</p>
+
+<p>As the sun sets on another day, I find <span id="peace">_________</span> in the quiet moments. The world may be chaotic, but within the walls of my home, there's a sense of serenity that cannot be disturbed. It's where I recharge, reflect, and prepare for whatever tomorrow may bring.</p>
+
+<p>Life is a <span id="opportunities">_________</span> filled with unexpected twists and turns. It's not always easy, but it's these <span id="obstacles">_________</span> that shape us into who we are. Embrace the unknown, for it is where the greatest <span id="journeys">_________</span> lie.</p>
+
+<hr />
+
+<button type="button" onclick="replaceSpan('diversity', diversityVariableValue)">unity</button><br />
+<button type="button" onclick="replaceSpan('peace', peaceVariableValue)">serenity</button><br />
+<button type="button" onclick="replaceSpan('opportunities', opportunitiesVariableValue)">challenges</button><br />
+<button type="button" onclick="replaceSpan('obstacles', obstaclesVariableValue)">obstacles</button><br />
+<button type="button" onclick="replaceSpan('journeys', journeysVariableValue)">adventures</button><br />
+</body>
+</html>
