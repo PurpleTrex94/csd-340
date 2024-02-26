@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        
+        #hidden-paragraph {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <p>Click the image to reveal a hidden message:</p>
+    <img src="tardis.jpg" onclick="toggleParagraph()" alt="Tardis">
+    <p id="hidden-paragraph">Sometimes he missed the monochrome world
+         of his first two incarnations. It had felt like a simpler, cleaner time;
+          so many centuries had passed before he realised he’d just been colour blind.</p>
+
+    <script>
+        function toggleParagraph() {
+            var paragraph = document.getElementById("hidden-paragraph");
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
