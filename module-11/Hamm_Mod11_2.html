@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+<input type="text" id="entryInput">
+<button onclick="addEntry()">Add</button>
+<button onclick="deleteList()">Delete Entire List</button>
+<button onclick="displayEntries()">Display</button>
+
+<div id="entryList"></div>
+
+<script>
+        let entries = [];
+        let entryList = document.getElementById('entryList');
+
+        function addEntry() {
+            let entry = document.getElementById('entryInput').value;
+            if (entry.trim() !== '') {
+                entries.push(entry);
+                updateEntryList();
+                document.getElementById('entryInput').value = ''; // Clear the input field
+            }
+        }
+
+        function deleteEntry(index) {
+            entries.splice(index, 1);
+            updateEntryList();
+        }
+
+        function deleteList() {
+            entries = [];
+            updateEntryList();
+        }
+
+        function displayEntries() {
+            let displayString = '';
+            entries.forEach((entry, index) => {
+                displayString += `${index + 1}. ${entry}\n`;
+            });
+            alert(displayString);
+        }
+
+        function updateEntryList() {
+            entryList.innerHTML = ''; // Clear the existing list
+            entries.forEach((entry, index) => {
+                let listItem = document.createElement('div');
+                listItem.textContent = `${index + 1}. ${entry}`;
+                let deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function() {
+                    deleteEntry(index);
+                };
+                listItem.appendChild(deleteButton);
+                entryList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>
